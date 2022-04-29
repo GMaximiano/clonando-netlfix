@@ -1,0 +1,87 @@
+:root{
+  --azul: #42c6fa;
+  --preta: #141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: var(--preta);
+  font-family: -apple-system, Helvetica, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  color: white;
+}
+.logo{
+  color: var(--azul);
+  font-family: 'arial black';
+  font-size: 40px;
+  margin-left: 22px;
+  
+}
+header nav{
+  font-size: 20px;
+}
+header nav a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+header nav a:hover{
+  color: #fff;
+}
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+/*Manga principal */
+.manga-principal{
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60),rgba(0,0,0,.60) 100%), url(/img/one\ piece\ capa.jpg);
+  height: 1000px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+
+}
+
+.manga-principal .descricao{
+  margin-bottom: 60px;
+  font-size: 30px;
+  width: 42%;
+  text-align: justify;
+}
+.manga-principal .titulo{
+  font-size: 60px;
+  margin-bottom: 9px;
+  margin-top: 15%;
+}
+.botao{
+  border:none;
+  background-color: rgba(0,0,0,.50);
+  color: white;
+  padding: 30px 40px;
+  margin-right: 33px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: .5s ease all;
+  font-size: 25px;
+}
+.botao:hover{
+  background-color: white;
+  color: black;
+}
+.manga-box{
+  height: 100%;
+  width: 100%;
+  display: block;
+  
+}
